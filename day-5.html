@@ -1,0 +1,101 @@
+<html>
+    <head>
+    </head>
+    <script type="text/javascript">
+        function divBgGrey()
+        {
+            document.getElementById("DA1").style.backgroundColor="grey";
+        }
+        function divBGDyanamic()
+        {
+            document.getElementById("DA1").style.backgroundColor=prompt("Enter Color Name......");   
+        }
+        function add()
+        {
+            var a=parseFloat(txtA.value);
+            var b=parseFloat(txtB.value);
+            var c=a+b;
+            textAns.value=c;
+           
+           
+        }
+        function sub()
+        {
+            var a=parseFloat(txtA.value);
+            var b=parseFloat(txtB.value);
+            var c=a-b;
+            textAns.value=c;
+        }
+        function mul()
+        {
+            var a=parseFloat(txtA.value);
+            var b=parseFloat(txtB.value);
+            var c=a*b;
+            textAns.value=c;
+            
+        }
+        function div()
+        {
+            var a=parseFloat(txtA.value);
+            var b=parseFloat(txtB.value);
+            var c=a/b;
+            textAns.value=c;
+        }
+        function CLR()
+        {
+            var a=parseFloat(txtA.value);
+            var b=parseFloat(txtB.value);
+            textAns.value=0;
+            alert(textAns.value);
+        }
+        function AquaTheme()
+        {
+            document.bgColor="aqua";
+        }
+        function BlackTheme()
+        {
+            document.bgColor="black";
+        }
+        function RedTheme()
+        {
+            document.bgColor="white";
+        }
+        function BlueTheme()
+        {
+            document.bgColor="blue";
+        }
+        function divBgDyanamic()
+        {
+            document.body.style.backgroundColor=prompt("Enter Color Name......")
+        }
+    </script>
+    <body>
+        <div id="DA1">
+            <div style="text-align:center;">
+                <div>
+                    Enter First Number:<input type="text" value="0" width="200px" id="txtA" style="margin-top: 10px; background-color:aqua;"/><br>
+                    Enter First Number:<input type="text" value="0" width="200px" id="txtB" style="margin-top: 10px; background-color:aqua;"/><br>
+                    Ans:<input type="text" value="0" width="200px" id="textAns"  style="margin-top: 10px; background-color:aqua;" readonly/>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <input type="button" value="+" id="ADD" onclick="add()" style="background-color:rgb(233, 233, 5);">
+                        <input type="button" value="-" id="SUB" onclick="sub()" style="background-color:rgb(18, 14, 248);">
+                        <input type="button" value="*" id="MUL" onclick="mul()" style="background-color:rgb(248, 12, 217);">
+                        <input type="button" value="/" id="DIV" onclick="div()" style="background-color:rgb(10, 170, 245);">
+                        <input type="button" value="C" id="CLR" onclick="CLR()" style="background-color:rgb(29, 250, 165);"><br>
+                        <input type="button" value="Div BG grey" onclick="divBgGrey()" style="background-color:gray ;margin-top: 10px;margin-bottom: 10px;" >
+                    </div>
+                <input type="button" onclick="AquaTheme()"; width=100px height=100px style="background-color: aqua;">
+                <input type="button" onclick="BlackTheme()"; width=100px height=100px style="background-color:black;">
+                <input type="button" onclick="BlueTheme()" width=100px height=100px style="background-color: blue;" >
+                <input type="button" onclick="BlueTheme()" width=100px height=100px style="background-color: rgb(17, 240, 203);" >
+                <input type="button" onclick="BlueTheme()" width=100px height=100px style="background-color: rgb(157, 233, 17);" >
+
+
+                <br>
+                        <input type="button" value="Div BG " onclick="divBgDyanamic()" style="background-color:gray ;margin-top: 10px;margin-bottom: 10px;" >
+                        <input type="button" value="Div BG 2" onclick="divBGDyanamic()" style="background-color: gray; margin-top: 10px;margin-bottom: 10px;" >
+                </div>
+        </div>
+    </body>
+</html>
